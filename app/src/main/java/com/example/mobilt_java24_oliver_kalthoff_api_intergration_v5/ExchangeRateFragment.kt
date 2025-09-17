@@ -42,7 +42,7 @@ class ExchangeRateFragment : Fragment(R.layout.fragment_exchange_rate) {
             { res ->
                 // Parsar kursen och skriver ut
                 val rate = JSONObject(res).getJSONObject("rates").getDouble(to)
-                tv.text = "SEK → $to: $rate"
+                tv.text = "SEK to $to: $rate"
             },
             // Enkel feltext
             { err -> tv.text = "Error: ${err.message ?: err.toString()}" }
