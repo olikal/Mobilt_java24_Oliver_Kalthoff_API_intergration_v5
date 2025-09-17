@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="textCapWords"
+            android:paddingBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnShowWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show weather" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose currency"
+            android:paddingTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/spCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnShowRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show rate"
+            android:paddingTop="8dp"/>
+
+    </LinearLayout>
+</FrameLayout>

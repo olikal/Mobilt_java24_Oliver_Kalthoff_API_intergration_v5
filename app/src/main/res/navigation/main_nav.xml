@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mobilt_java24_oliver_kalthoff_api_intergration_v5.LoginFragment">
+        <action
+            android:id="@+id/action_home_to_hub"
+            app:destination="@id/hubFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hubFragment"
+        android:name="com.example.mobilt_java24_oliver_kalthoff_api_intergration_v5.HubFragment">
+        <action
+            android:id="@+id/action_hub_to_detail"
+            app:destination="@id/forecastDetailFragment" />
+        <action
+            android:id="@+id/action_hub_to_exchange"
+            app:destination="@id/exchange_rate" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forecastDetailFragment"
+        android:name="com.example.mobilt_java24_oliver_kalthoff_api_intergration_v5.ForecastDetailFragment" />
+
+    <fragment
+        android:id="@+id/exchange_rate"
+        android:name="com.example.mobilt_java24_oliver_kalthoff_api_intergration_v5.ExchangeRateFragment" />
+</navigation>
